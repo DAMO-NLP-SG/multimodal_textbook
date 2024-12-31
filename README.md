@@ -6,7 +6,7 @@
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2306.07209)
 [![Project](https://img.shields.io/badge/Project-Website-blue.svg)](https://multi-modal-self-instruct.github.io)
 
-<video src="src/demo_en_tiny.mp4" width="710" height="480" autoplay loop></video>
+<video src="./src/demo_en_tiny.mp4" width="710" height="480" autoplay loop></video>
 
 
 
