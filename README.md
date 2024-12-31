@@ -14,9 +14,11 @@ This repository is the official code for ["2.5 Years in Class: A Multimodal Text
 
 - Multimodal Textbook is a high-quality **pre-training corpus** that encompasses a wealth of foundational knowledge, which is presented in an **image-text interleaved format**.
 - This textbook is constructed from 2.5 years of instructional videos, amounting to 22,000 class hours, covering six fundamental subjects, including mathematics, physics, and others. 
-- In multimodal textbooks, text is transcribed from audio, and images are extracted from video's kekframe. They are closely aligned, and provide more coherent context.
+- In multimodal textbooks, text is transcribed from audio, and images are extracted from video's kekframe. They are closely aligned, and provide more coherent context.  
+  
 
-<img src="./src/page_fig.png" alt="Image" style="width: 900px;">  
+
+<img src="./src/page_fig.png" alt="Image" style="width: 700px;">  
 
 ## 🛠️ Installation
 
