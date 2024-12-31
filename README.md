@@ -33,7 +33,6 @@ pip install --upgrade pip
 pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118  
 pip install -e .
 pip install open_flamingo --no-deps
-pip install ninja
 pip install flash-attn --no-build-isolation
 ```
 
@@ -74,20 +73,20 @@ In the notebook, you can see keyframes interleaving with text.
 
 
 ## Data Preparation
-- Multimodal Textbook: `multimodal_textbook.json` + images folder
+- Training Corpus: `multimodal_textbook.json` (11GB) + images folder (700GB)
 - Benchmarks: OKVQA, TextVQA, scienceQ, Mathvista, mathvision, mathverse  in `./playground/data/eval/`
  
-We provide a ``json file`` and corresponding images folder for textbook with 100 samples in the ``example_data`` folder, which is convenient for debugging. The full version of our dataset can be downloaded on our huggingface.
+We provide a ``json file`` and corresponding images folder for textbook with 100 samples in the ``example_data`` folder, which is convenient for debugging. The full version of our dataset can be downloaded on our [Huggingface Dataset](https://huggingface.co/datasets/zwq2018/Multi-modal-Self-instruct).
 
 
 ### Naming Format  
 
 For each keyframe, its naming format rule is:   
-`video id@start-time_end-time#framk-number.jpg`.   
+`video id@start-time_end-time#keyframe-number.jpg`.   
 For example, the path and file name of a keyframe is   
 `-1uixJ1V-As/-1uixJ1V-As@10.0_55.0#2.jpg`.   
 
-This means that the video id of this keyframe is `-1uixJ1V-As` and it is the second keyframe (#2) in the video clip from 10.0 to 55.0 seconds. You can access the original video through [https://www.youtube.com/watch?v=-1uixJ1V-As](https://www.youtube.com/watch?v=-1uixJ1V-As).
+This means that this image is extracted from the video (`-1uixJ1V-As`), more specifically, it is the second keyframe (#2) in the video clip from 10.0 to 55.0 seconds. You can access the original video through [https://www.youtube.com/watch?v=-1uixJ1V-As](https://www.youtube.com/watch?v=-1uixJ1V-As).
 
 
 
