@@ -13,12 +13,12 @@
 This repository is the official code for ["2.5 Years in Class: A Multimodal Textbook for Vision-Language Pretraining"](https://arxiv.org/pdf/2306.07209). It contains the implementation of pre-training LLaVA on our multimodal textbook (interleaved image-text corpora). Our dataset can be found in [Huggingface Dataset](https://huggingface.co/datasets/zwq2018/Multi-modal-Self-instruct).
 
 - Multimodal Textbook is a high-quality **pre-training corpus** that encompasses a wealth of foundational knowledge, which is presented in an **image-text interleaved format**.
-- This textbook is constructed from 2.5 years of instructional videos, amounting to 22,000 class hours, covering six fundamental subjects, including mathematics, physics, and others. 
+- This textbook is constructed from **2.5 years of instructional videos**, amounting to 22,000 class hours, covering six fundamental subjects, including mathematics, physics, and others. 
 - In multimodal textbooks, text is transcribed from audio, and images are extracted from video's kekframe. They are closely aligned, and provide more coherent context.  
   
 
 
-<img src="./src/page_fig.png" alt="Image" style="width: 700px;">  
+<img src="./src/page_fig.png" alt="Image" style="width: 900px;">  
 
 ## 🛠️ Installation
 
@@ -55,13 +55,14 @@ Each sample is stored in dict format as follows:
  ....
 ]
 ```
-Just like Obelics, the "images" and "texts" items are arranged interleavely: 
-- "Images" list contains multiple keyframes and "None", where "None" represents that the current position is text. The position of "None" in "texts" list is exactly the opposite.
-- "text_ocr_list" additionally contains text obtained through OCR on keyframes.
+Just like [OBELICS](https://github.com/huggingface/OBELICS), the "images" and "texts" are arranged interleavely: 
+- "Images" list contains multiple keyframes and "None", where "None" represents that the current position is text. 
+- "texts" list contain multiple asr text. The position of "None" in "texts" list is image.
+- "text_ocr_list": In addition to asr text, "text_ocr_list" also includes OCR text.
 - "image_num", "text_num", "token_num": respectively represent the number of images, the number of asr text tokens, and the estimated total number of tokens in this sample.
 
 
-To view the dataset more conveniently, we have written a jupyter notebook: `./llava/dataset/show_interleaved_dataset.ipynb`
+To view our dataset more conveniently, we have written a jupyter notebook: `./llava/dataset/show_interleaved_dataset.ipynb`
 
 ```
 cd example_data
@@ -135,9 +136,9 @@ cd scripts
 ./run_training.sh
 ```
 Note: 
-> data_path: your interleaved dataset in obelics format . The image path in contained in json file   
+> data_path: the interleaved dataset in obelics format. You just need to replace the `textbook_sample_100.json` with `multimodal_textbook.json`.
 model_max_length: max length    
-mmc4_max_num_images: The maximum number of images in the sample. Images exceeding this number will be ignored.
+mmc4_max_num_images: The maximum number of images in the sample. Images exceeding this number will be ignored. 
 
 ### Pre-training with Idefics2-base 
 
@@ -146,7 +147,7 @@ If you want to train idefics2 using mmc4 or our textbook, we also provide a scri
 cd training_idefics
 ./run.sh
 ```
-Note: this script use `ours_textbook_video_clip_format.json`, which is different from previous format.
+Note: this script use `ours_textbook_video_clip_format.json`, which is different from OBELICS format.
 
 
 
