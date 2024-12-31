@@ -1,11 +1,26 @@
-# Pre-training LLaVA with Multimodal-Textbook (Interleaved Image-text Corpora)
 
-This folder contains the implementation of pre-training LLaVA on our multimodal textbook (interleaved image-text corpora), including ours, [MMC4](https://arxiv.org/abs/2304.06939), and [OBELICS](https://arxiv.org/abs/2306.16527).
+# Multimodal-Textbook
+<img src="./src/logo.png" alt="Image" style="width: 900px;">  
+
+[![Datasets](https://img.shields.io/badge/HuggingFace-Datasets-orange.svg)](https://huggingface.co/datasets/zwq2018/Multi-modal-Self-instruct)
+[![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2306.07209)
+[![Project](https://img.shields.io/badge/Project-Website-blue.svg)](https://multi-modal-self-instruct.github.io)
+
+<video src="src/demo_en_tiny.mp4" width="710" height="480" autoplay loop></video>
 
 
 
+## Overview
 
-## 🛠️ Installationv
+This repository is the official code for ["2.5 Years in Class: A Multimodal Textbook for Vision-Language Pretraining"](https://arxiv.org/pdf/2306.07209). It contains the implementation of pre-training LLaVA on our multimodal textbook (interleaved image-text corpora). Our dataset can be found in [Huggingface Dataset](https://huggingface.co/datasets/zwq2018/Multi-modal-Self-instruct).
+
+- Multimodal Textbook is a high-quality **pre-training corpus** that encompasses a wealth of foundational knowledge, which is presented in an **image-text interleaved format**.
+- This textbook is constructed from 2.5 years of instructional videos, amounting to 22,000 class hours, covering six fundamental subjects, including mathematics, physics, and others. 
+- In multimodal textbooks, text is transcribed from audio, and images are extracted from video's kekframe. They are closely aligned, and provide more coherent context.
+
+
+
+## 🛠️ Installation
 
 ```
 cd multimodal_textbook
@@ -26,18 +41,25 @@ pip install flash-attn --no-build-isolation
 
 ## Visualize Our Textbook   
 
-Due to the large size of the dataset (our complete textbook dataset is 13GB for JSON files and 1TB for images), we sampled 100 samples and the corresponding images and stored them in the `example_data` folder: `./example_data/textbook_sample_100.json`.
+Due to the large size of the dataset (our complete textbook dataset is 13GB for JSON files and 0.7TB for images), we sampled 100 samples and the corresponding images and stored them in the `example_data` folder: `./example_data/textbook_sample_100.json`.
 
-For each sample, the data structure is as follows:
+Each sample is stored in dict format as follows:
 ```
-{'images':         [keyframe1, None, keyframe2, None, keyframe3, None,.....],
- 'texts':          [None,      asr1,  None,      asr2, None,     asr3,.....],
- 'text_ocr_list':  [None, asr1+ocr1,  None, asr2+ocr2, None,asr3+ocr3,.....],
+[
+{'images':  [keyframe1, None, keyframe2, None, keyframe3, None,.....],
+ 'texts':   [None,      asr1,  None,      asr2, None,     asr3,.....],
+ 'text_ocr_list':  [None, asr1+ocr1,  None, asr2+ocr2, None, asr3+ocr3,.....],
  'metadata': [...],
  'image_num': 15,
  'text_num': 425,
- 'token_num': 9065}
+ 'token_num': 9065},
+ ....
+]
 ```
+Just like Obelics, the "images" and "texts" items are arranged interleavely: 
+- "Images" list contains multiple keyframes and "None", where "None" represents that the current position is text. The position of "None" in "texts" list is exactly the opposite.
+- "text_ocr_list" additionally contains text obtained through OCR on keyframes.
+- "image_num", "text_num", "token_num": respectively represent the number of images, the number of asr text tokens, and the estimated total number of tokens in this sample.
 
 
 To view the dataset more conveniently, we have written a jupyter notebook: `./llava/dataset/show_interleaved_dataset.ipynb`
