@@ -7,6 +7,7 @@
 [![Project](https://img.shields.io/badge/Project-Website-blue.svg)](https://multi-modal-self-instruct.github.io)
 
 
+<video src="https://github.com/user-attachments/assets/94dcc8a2-82cc-444f-a59e-d30ee9f2cfa1" width="640" height="480" autoplay loop></video>
 
 ## Overview
 
