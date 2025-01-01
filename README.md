@@ -2,7 +2,7 @@
 # Multimodal-Textbook
 <img src="./src/logo.png" alt="Image" style="width: 900px;">  
 
-[![Datasets](https://img.shields.io/badge/HuggingFace-Datasets-orange.svg)](https://huggingface.co/datasets/zwq2018/Multi-modal-Self-instruct)
+[![Datasets](https://img.shields.io/badge/HuggingFace-Datasets-orange.svg)](https://huggingface.co/datasets/DAMO-NLP-SG/multimodal_textbook)
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2306.07209)
 [![Project](https://img.shields.io/badge/Project-Website-blue.svg)](https://multi-modal-self-instruct.github.io)
 
@@ -11,7 +11,7 @@
 
 ## Overview
 
-This repository is the official code for ["2.5 Years in Class: A Multimodal Textbook for Vision-Language Pretraining"](https://arxiv.org/pdf/2306.07209). It contains the implementation of pre-training LLaVA on our multimodal textbook (interleaved image-text corpora). Our dataset can be found in [Huggingface Dataset](https://huggingface.co/datasets/zwq2018/Multi-modal-Self-instruct).
+This repository is the official code for ["2.5 Years in Class: A Multimodal Textbook for Vision-Language Pretraining"](https://arxiv.org/pdf/2306.07209). It contains the implementation of pre-training LLaVA on our multimodal textbook (interleaved image-text corpora). Our dataset can be found in [Huggingface Dataset](https://huggingface.co/datasets/DAMO-NLP-SG/multimodal_textbook).
 
 - Multimodal Textbook is a high-quality **pre-training corpus** that encompasses a wealth of foundational knowledge, which is presented in an **image-text interleaved format**.
 - This textbook is constructed from **2.5 years of instructional videos**, amounting to 22,000 class hours, covering six fundamental subjects, including mathematics, physics, and others. 
@@ -78,7 +78,7 @@ In the notebook, you can see keyframes interleaving with text.
 - Training Corpus: `multimodal_textbook.json` (11GB) + images folder (700GB)
 - Benchmarks: OKVQA, TextVQA, scienceQ, Mathvista, mathvision, mathverse  in `./playground/data/eval/`
  
-We provide a ``json file`` and corresponding images folder for textbook with 100 samples in the ``example_data`` folder, which is convenient for debugging. The full version of our dataset can be downloaded on our [Huggingface Dataset](https://huggingface.co/datasets/zwq2018/Multi-modal-Self-instruct).
+We provide a ``json file`` and corresponding images folder for textbook with 100 samples in the ``example_data`` folder, which is convenient for debugging. The full version of our dataset can be downloaded on our [Huggingface Dataset](https://huggingface.co/datasets/DAMO-NLP-SG/multimodal_textbook).
 
 
 ### Naming Format  
