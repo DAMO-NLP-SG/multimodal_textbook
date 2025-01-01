@@ -3,8 +3,8 @@
 <img src="./src/logo.png" alt="Image" style="width: 900px;">  
 
 [![Datasets](https://img.shields.io/badge/HuggingFace-Datasets-orange.svg)](https://huggingface.co/datasets/DAMO-NLP-SG/multimodal_textbook)
-[![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2306.07209)
-[![Project](https://img.shields.io/badge/Project-Website-blue.svg)](https://multi-modal-self-instruct.github.io)
+[![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://multimodal-textbook.github.io/)
+[![Project](https://img.shields.io/badge/Project-Website-blue.svg)](https://multimodal-textbook.github.io/)
 
 
 <video src="https://github.com/user-attachments/assets/94dcc8a2-82cc-444f-a59e-d30ee9f2cfa1" width="714" height="480" autoplay loop></video>
@@ -151,7 +151,7 @@ cd training_idefics
 Note: this script use `ours_textbook_video_clip_format.json`, which is different from OBELICS format.
 
 
-
+## Citation
 
 ## Acknowledgements  
 The codebase is based on [LLaVA](https://github.com/haotian-liu/LLaVA) and [OmniCorpus](https://github.com/OpenGVLab/OmniCorpus), Thanks for their great work.
