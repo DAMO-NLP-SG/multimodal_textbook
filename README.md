@@ -4,7 +4,7 @@
 
 [![Datasets](https://img.shields.io/badge/HuggingFace-Datasets-orange.svg)](https://huggingface.co/datasets/DAMO-NLP-SG/multimodal_textbook)
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://multimodal-textbook.github.io/)
-[![Project](https://img.shields.io/badge/Project-Website-blue.svg)](https://multimodal-textbook.github.io/)
+[![Project](https://img.shields.io/badge/Project-Website-blue.svg)](https://multimodal-interleaved-textbook.github.io/)
 
 
 <video src="https://github.com/user-attachments/assets/94dcc8a2-82cc-444f-a59e-d30ee9f2cfa1" width="714" height="480" autoplay loop></video>
