@@ -3,7 +3,7 @@
 <img src="./src/logo.png" alt="Image" style="width: 900px;">  
 
 [![Datasets](https://img.shields.io/badge/HuggingFace-Datasets-orange.svg)](https://huggingface.co/datasets/DAMO-NLP-SG/multimodal_textbook)
-[![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://multimodal-textbook.github.io/)
+[![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2501.00958)
 [![Project](https://img.shields.io/badge/Project-Website-blue.svg)](https://multimodal-interleaved-textbook.github.io/)
 
 
