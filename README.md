@@ -11,7 +11,7 @@
 
 ## Overview
 
-This repository is the official code for ["2.5 Years in Class: A Multimodal Textbook for Vision-Language Pretraining"](https://arxiv.org/pdf/2306.07209). It contains the implementation of pre-training LLaVA on our multimodal textbook (interleaved image-text corpora). Our dataset can be found in [Huggingface Dataset](https://huggingface.co/datasets/DAMO-NLP-SG/multimodal_textbook).
+This repository is the official code for ["2.5 Years in Class: A Multimodal Textbook for Vision-Language Pretraining"](https://arxiv.org/abs/2501.00958). It contains the implementation of pre-training LLaVA on our multimodal textbook (interleaved image-text corpora). Our dataset can be found in [Huggingface Dataset](https://huggingface.co/datasets/DAMO-NLP-SG/multimodal_textbook).
 
 - Multimodal Textbook is a high-quality **pre-training corpus** that encompasses a wealth of foundational knowledge, which is presented in an **image-text interleaved format**.
 - This textbook is constructed from **2.5 years of instructional videos**, amounting to 22,000 class hours, covering six fundamental subjects, including mathematics, physics, and others. 
