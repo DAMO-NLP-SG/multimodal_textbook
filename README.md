@@ -7,7 +7,7 @@
 [![Project](https://img.shields.io/badge/Project-Website-blue.svg)](https://multimodal-interleaved-textbook.github.io/)
 
 
-<video src="https://github.com/user-attachments/assets/94dcc8a2-82cc-444f-a59e-d30ee9f2cfa1" width="714" height="480" autoplay loop></video>
+<video src="https://github.com/user-attachments/assets/204c4985-41fd-456e-8282-e336f2e44f52" width="714" height="480" autoplay loop></video>
 
 ## Overview
 
