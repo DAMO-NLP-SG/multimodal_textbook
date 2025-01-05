@@ -148,10 +148,19 @@ If you want to train idefics2 using mmc4 or our textbook, we also provide a scri
 cd training_idefics
 ./run.sh
 ```
-Note: this script use `ours_textbook_video_clip_format.json`, which is different from OBELICS format.
+Note: this script uses `ours_textbook_video_clip_format.json`, which is different from OBELICS format.
 
 
 ## Citation
+If you use our data or code in your research projects, please mention this repo and cite our paper as follows:
+```bibtex
+@article{zhang20252,
+  title={2.5 Years in Class: A Multimodal Textbook for Vision-Language Pretraining},
+  author={Zhang, Wenqi and Zhang, Hang and Li, Xin and Sun, Jiashuo and Shen, Yongliang and Lu, Weiming and Zhao, Deli and Zhuang, Yueting and Bing, Lidong},
+  journal={arXiv preprint arXiv:2501.00958},
+  year={2025}
+}
+```
 
 ## Acknowledgements  
 The codebase is based on [LLaVA](https://github.com/haotian-liu/LLaVA) and [OmniCorpus](https://github.com/OpenGVLab/OmniCorpus), Thanks for their great work.
