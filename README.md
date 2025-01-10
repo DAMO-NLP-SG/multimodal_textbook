@@ -26,7 +26,7 @@ This repository is the official code for ["2.5 Years in Class: A Multimodal Text
 
 ```
 cd multimodal_textbook
-# create and activate an enviroment
+# create and activate an environment
 conda create -n interleaved_textbook python=3.10 -y
 conda activate interleaved_textbook
 
