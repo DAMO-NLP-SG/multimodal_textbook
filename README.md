@@ -11,8 +11,8 @@
 <video src="https://github.com/user-attachments/assets/204c4985-41fd-456e-8282-e336f2e44f52" width="714" height="480" autoplay loop></video>
    
 ## News    
-🎆 [New 2025018] **Multimodal Textbook has more than 8000 downloads on the huggingface dataset.**   
-🎆 [New 2025018] **Multimodal Textbook ranks second on Hugginface Weekly Trending.**
+🎆 [New 2025018] Multimodal Textbook has more than 8000 downloads on the huggingface dataset.   
+🎆 [New 2025018] Multimodal Textbook ranks #2 on Hugginface Weekly Trending.
 
 
 ## Overview
@@ -21,7 +21,7 @@ This repository is the official code for ["2.5 Years in Class: A Multimodal Text
 
 - Multimodal Textbook is a high-quality **pre-training corpus** that encompasses a wealth of foundational knowledge, which is presented in an **image-text interleaved format**.
 - This textbook is constructed from **2.5 years of instructional videos**, amounting to 22,000 class hours, covering six fundamental subjects, including mathematics, physics, and others. 
-- In multimodal textbooks, text is transcribed from audio, and images are extracted from video's kekframe. They are closely aligned, and provide more coherent context.  
+- In multimodal textbooks, the text is transcribed from audio, and images are extracted from video's kekframe. They are closely aligned, and provide more coherent context.  
   
 
 
@@ -31,7 +31,7 @@ This repository is the official code for ["2.5 Years in Class: A Multimodal Text
 
 ```
 cd multimodal_textbook
-# create and activate an enviroment
+# create and activate an environment
 conda create -n interleaved_textbook python=3.10 -y
 conda activate interleaved_textbook
 
