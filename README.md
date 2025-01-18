@@ -12,7 +12,7 @@
    
 ## News    
 🎆 [New 2025018] Multimodal Textbook has more than 8000 downloads on the huggingface dataset.   
-🎆 [New 2025018] Multimodal Textbook ranks #2 on Hugginface Weekly Trending.
+🎆 [New 2025015] Multimodal Textbook ranks #2 on Hugginface Weekly Trending.
 
 
 ## Overview
