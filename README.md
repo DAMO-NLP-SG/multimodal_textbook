@@ -6,11 +6,13 @@
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2501.00958)
 [![Project](https://img.shields.io/badge/Project-Website-blue.svg)](https://multimodal-interleaved-textbook.github.io/)
 [![zhihu](https://img.shields.io/badge/知乎-Blog-0F88EB.svg)](https://zhuanlan.zhihu.com/p/16512014215)
-🎆 [New 2025018] **Multimodal Textbook has more than 8000 downloads on the huggingface dataset.**   
-🎆 [New 2025018] **Multimodal Textbook ranks second on Hugginface Weekly Trending.**
+
 
 <video src="https://github.com/user-attachments/assets/204c4985-41fd-456e-8282-e336f2e44f52" width="714" height="480" autoplay loop></video>
-## News
+   
+## News    
+🎆 [New 2025018] **Multimodal Textbook has more than 8000 downloads on the huggingface dataset.**   
+🎆 [New 2025018] **Multimodal Textbook ranks second on Hugginface Weekly Trending.**
 
 
 ## Overview
