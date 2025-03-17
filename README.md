@@ -113,7 +113,7 @@ cd scripts
 Note:
 > `model_path` :  The model path that needs to be evaluated.    
 `shot`: the number of the examples in prompt.     
-`question-file`, `answers-file`, `image-folder` : mathvista's json file and images, The json file is already included in the `playground/data/eval/mathvista`. Only the corresponding images need to be downloaded.    
+`question-file`, `answers-file`, `image-folder` : mathvista's json file and images, The json file is already included in the `playground/data/eval/mathvista`. The complete playground folder (images and json files) can be downloaded on our [Huggingface Dataset](https://huggingface.co/datasets/DAMO-NLP-SG/multimodal_textbook): ./playground.zip.   
 `train_image_dir_path`, `train_image_dir_path`: In few-shot scenarios, we retrieve the top-k simliar examples from the training dataset. Since mathvista has no training set, we retrieve it from mathvision.    
 `cached_demonstration_features`: the image features of the mathvision which is used for few-shot retrieval.     
 `rices`: Whether to use few-shot retrieval.  

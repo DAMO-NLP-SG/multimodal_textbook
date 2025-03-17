@@ -43,6 +43,7 @@ playground/data/textvqa
 playground/data/vg
 playground/data/LLaVA-Pretrain/images
 playground/data/eval*
+playground.zip
 
 # lqy custom
 runnings_*/*/*
